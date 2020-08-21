@@ -370,7 +370,11 @@ PRODUCT_PACKAGES += \
     camera.msm8953_shim \
     libshim_dpmframework
 
-# TextClassifier smart selection model files
+# Tethering
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+
+# Textclassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
