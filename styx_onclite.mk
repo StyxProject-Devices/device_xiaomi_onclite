@@ -13,21 +13,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/onclite/device.mk)
 
 # Inherit some PixelPlusUI stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/styx/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_GAPPS_ARCH := arm64
-CUSTOM_BUILD_TYPE := OFFICIAL
-TARGET_FACE_UNLOCK_SUPPORTED := true
-PPUI_MAINTAINER := KostyaJRZ
+STYX_BUILD_VARIANT := ALPHA
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_onclite
+PRODUCT_NAME := styx_onclite
 PRODUCT_DEVICE := onclite
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7
 PRODUCT_MANUFACTURER := Xiaomi
-
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="redfin-user 11 RQ2A.210305.006 7119741 release-keys"
