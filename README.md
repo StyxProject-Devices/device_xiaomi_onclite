@@ -1,4 +1,4 @@
-PixelPlusUI Device Tree for Xiaomi Redmi 7 (onclite)
+Device Tree for Xiaomi Redmi 7 (onclite)
 ====================================================
 
 The Xiaomi Redmi 7 (codenamed "Onclite") is an budget smartphone from Xiaomi.
