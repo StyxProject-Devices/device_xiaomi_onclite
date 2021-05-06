@@ -8,9 +8,7 @@
    "target_path": "kernel/xiaomi/onclite"
  },
  {
-   "repository": "PixelPlusUI-Devices/vendor_xiaomi_onclite",
-   "target_path": "vendor/xiaomi/onclite",
-   "remote": "github",
-   "branch": "3.0_r1"
+   "repository": "vendor_xiaomi_onclite",
+   "target_path": "vendor/xiaomi/onclite"
  }
 ]
