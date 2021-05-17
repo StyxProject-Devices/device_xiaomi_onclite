@@ -19,7 +19,6 @@ $(call inherit-product, vendor/xiaomi/onclite/onclite-vendor.mk)
 
 TARGET_USES_QCOM_CHIPSET := true
 PRODUCT_BOARD_PLATFORM := msm8953
-PRODUCT_SOONG_NAMESPACES += packages/apps/Bluetooth
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
