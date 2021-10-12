@@ -125,7 +125,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    android.hardware.bluetooth@1.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -148,6 +149,7 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-impl \
@@ -171,7 +173,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.drm@1.3-service.clearkey
+    android.hardware.drm@1.3-service.clearkey \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor
 
 # FM
 PRODUCT_PACKAGES += \
@@ -222,8 +228,15 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-service \
     android.hardware.keymaster@4.0-impl \
-    android.hardware.keymaster@4.0-service
+    android.hardware.keymaster@4.0-service \
+    android.hardware.keymaster@3.0.vendor \
+    android.hardware.keymaster@4.0.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.gatekeeper@1.0 \
+    android.hardware.gatekeeper@1.0.vendor
 
 # keylayout
 PRODUCT_COPY_FILES += \
@@ -296,6 +309,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.2 \
+    android.hardware.neuralnetworks@1.2.vendor
+
 # Perfd (dummy)
 PRODUCT_PACKAGES += \
     libqti-perfd-client
@@ -338,6 +356,16 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
     android.hardware.radio.config@1.1 \
     android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.0.vendor \
     librmnetctl \
     libcnefeatureconfig \
     libxml2 \
